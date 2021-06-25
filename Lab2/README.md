@@ -10,11 +10,16 @@ The second program is split into two files, one contains the whole function and 
 * C
 
 ## Setup
-To run this program:
-
+To run program:
+#### First program
 ```
 $ gcc -o out first.c
 $ ./out
+```
+#### Second program
+```
+$ make
+$ ./outprogname
 ```
 
 ## Terminal display
