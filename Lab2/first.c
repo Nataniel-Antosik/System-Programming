@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <utmp.h>
+#include <sys/types.h>
+#include <pwd.h> 
+
+int main(int argc, char *argv[]){
+    struct utmp *wsk;
+    struct passwd *pwd;
+    int koniec = 1;
+    do{
+        wsk = getutent();
+        if (wsk == NULL){ 
+        koniec = 0; 
+        } else {
+        if(wsk->ut_type == 7){
+            pwd = getpwnam(wsk->ut_user);
+            printf("Name: %s\n", pwd->pw_name);
+            printf("User ID: %d\n", pwd->pw_uid);
+        }
+        }   
+    }while(koniec);
+    return 0;
+}
