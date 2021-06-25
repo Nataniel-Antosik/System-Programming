@@ -10,7 +10,7 @@ Program is created with:
 * C
 
 ## Setup
-To run this program, install it locally using gcc:
+To run this program:
 
 ```
 $ gcc -o out first.c
