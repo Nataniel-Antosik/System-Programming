@@ -16,3 +16,6 @@ To run this program:
 $ gcc -o out first.c
 $ ./out
 ```
+
+## Terminal display
+<img src ="Terminal.PNG" widith="400" height="300">
