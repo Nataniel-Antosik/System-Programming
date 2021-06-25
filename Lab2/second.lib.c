@@ -6,11 +6,11 @@
 void print_Users(){
     struct utmp *wsk;
     struct passwd *pwd;
-    int koniec = 1;
+    int end = 1;
     do{
         wsk = getutent();
         if (wsk == NULL){ 
-        koniec = 0; 
+        end = 0; 
         } else {
         if(wsk->ut_type == 7){
             pwd = getpwnam(wsk->ut_user);
@@ -18,5 +18,5 @@ void print_Users(){
             printf("User ID: %d\n", pwd->pw_uid);
         }
         }   
-    }while(koniec);
+    }while(end);
 }
