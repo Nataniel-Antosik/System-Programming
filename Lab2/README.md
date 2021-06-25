@@ -1,6 +1,6 @@
 # Lab 2
 
-## Description
+## General info
 A simple application using getutxent and getpwnam functions along with utmpx structure.
 Two programs display the currently logged in users and give the UID of the log in user 
 File "first" don't have makefile.
