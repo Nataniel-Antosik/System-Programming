@@ -8,6 +8,7 @@ The second program is split into two files, one contains the whole function and 
 
 ## Program is created with:
 * C
+* Makefile
 
 ## Setup
 To run program:
