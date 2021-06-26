@@ -5,6 +5,7 @@ The program dynamically loads (using the dlfcn library function) a previously pr
 
 ## Program is created with:
 * C
+* Makefile
 
 ## Setup
 To run program:
