@@ -5,6 +5,7 @@ In this version we use the static library.
 
 ## Program is created with:
 * C
+* Makefile
 
 ## Setup
 To run program:
