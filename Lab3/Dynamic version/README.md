@@ -1,7 +1,7 @@
 # Dynamic Version
 
 ## General info
-The program tries to dynamically load (using the dlfcn library function) the previously prepared shared library and import the shared function provided by it. 
+The program dynamically loads (using the dlfcn library function) a previously prepared shared library and imports the function it provides. 
 
 ## Program is created with:
 * C
