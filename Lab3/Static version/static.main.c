@@ -49,11 +49,11 @@ int main(int argc, char *argv[])
 void print_Users(int hflag, int gflag){
     struct utmp *wsk;
     struct passwd *pwd;
-    int koniec = 1;
+    int end = 1;
     do{
         wsk = getutent();
         if (wsk == NULL){ 
-        koniec = 0; 
+        end = 0; 
         } else {
         if(wsk->ut_type == USER_PROCESS){
             pwd = getpwnam(wsk->ut_user);
@@ -70,6 +70,6 @@ void print_Users(int hflag, int gflag){
 			} 
         }
         }   
-    }while(koniec);
+    }while(end);
 }
 
