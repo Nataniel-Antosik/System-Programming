@@ -13,4 +13,4 @@ Using the previous labs we add a new option with switches using getopt.
 
 ## Program is created with:
 * C
-
+* Makefile
