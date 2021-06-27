@@ -34,21 +34,21 @@ int main(int argc, char *argv[])
 	function_counter = quantity_argc_f(argc, argv);
 	index_ARGC = index_argc(argc, argv);
 
-	char *funkcja[function_counter + 2]; //1 argument a.out last argument nulll
+	char *function[function_counter + 2]; //1 argument a.out last argument nulll
 
-	funkcja[0] = argv[0]; 
-	funkcja[function_counter + 1] = NULL; //this requires execve
+	function[0] = argv[0]; 
+	function[function_counter + 1] = NULL; //this requires execve
 
 	printf("Index for ARGC = %d\n", index_ARGC);
 	printf("Number of functions = %d\n", function_counter);
 
 	for (int i = index_ARGC; i < argc; i++){
-		funkcja[k] = argv[i];
+		function[k] = argv[i];
 		k += 1;
 	}
 	printf("Function: ");
 	for (int i = 1; i < function_counter + 1; i++){
-		printf("%s\n", funkcja[i]);		
+		printf("%s\n", function[i]);		
 	}
 	
 	counter_performance_functions = number_of_programs(argc, argv);
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 		clock_gettime(clock, &tp_start);
 		pid = fork();
 		if(pid == 0){ 			//child
-			execve(funkcja[0], funkcja, NULL); //calling the function
+			execve(function[0], function, NULL); //calling the function
 		} else if(pid > 0){ 	//parent
 			wait4(pid, NULL, 0, &rusage); 
 			clock_gettime(clock, &tp_stop); //end of time download
