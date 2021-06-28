@@ -8,7 +8,7 @@
 #include <pthread.h>
 #include "timer.h"
 
-void silnia(int n);
+void factorial(int n);
 void *thFunction(void *arg);
 pthread_mutex_t fastMutex = PTHREAD_MUTEX_INITIALIZER;
 
@@ -88,13 +88,13 @@ void *thFunction(void *arg){
 	int index_flags = *(int *)(arg);
 	start();
 	while(flags[index_flags]){
-		silnia(100);
+		factorial(100);
 	}
 	printf("	Thread ID:: %lu, Execution time: %f\n", pthread_self(), stop());	
 	return NULL;
 }
 
-void silnia(int n){
+void factorial(int n){
 	int s = 1;
 	for(int i = n; i > 1; i--){
 
