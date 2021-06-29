@@ -81,6 +81,7 @@ int main(int argc, char *argv[]){
 		}
 
 	}
+	free(flags);
 	return 0;
 }
 
@@ -97,7 +98,6 @@ void *thFunction(void *arg){
 void factorial(int n){
 	int s = 1;
 	for(int i = n; i > 1; i--){
-
 		s = s * i;
 	}	
 }
