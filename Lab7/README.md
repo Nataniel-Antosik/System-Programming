@@ -22,7 +22,7 @@ If you do not specify the number of threads, the program fires all possible comb
 ## Setup
 To run program:
 
-### shorcut.c program 
+### shortcut.c program 
 ```
 $ make
 $ ./out2 dees
