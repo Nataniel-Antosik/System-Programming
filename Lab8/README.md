@@ -3,7 +3,7 @@
 ## General info
 The main purpose of these two programs is to crack a captured password in a format accepted by crypt using the dictionary method. The way the two programs work is that they cooperate with each other by setting up multiple processes created from the two programs. For communication between the processes I used message queues and shared memory in <b>POSIX</b> version
 
-### Info about first program manager.c
+## Info about first program manager.c
 (Manager) manages the calculations:
 * prepares data, i.e. reads a password file or maps it to shared memory (tmp.txt), creates a message queue
 * provides shared memory
@@ -17,7 +17,7 @@ The main purpose of these two programs is to crack a captured password in a form
 
 After the action is finished, it displays the results of the search for workers
 
-### Info about second program worker.c
+## Info about second program worker.c
 (Worker) can be started multiple times and work
 in parallel in many processes. Worker performs calculations related to assigned Worker performs calculations related to subtasks assigned by the Manager. For this purpose, Worker is launched with the following options:
 1. the name of the message queue,
