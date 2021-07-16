@@ -236,7 +236,7 @@ void *thFunction(void *arg){
 			close(newConnection);	
 			optionSlash = 0; 
 			optionNoSlash = 0;
-		} else if(optionSlash == 1 && optionNoSlash > 0){ //Opcja wyszukania pliku z '/'
+		} else if(optionSlash == 1 && optionNoSlash > 0){ //The option to search for a file with '/'
 			char object[120000];
 			char path[100];
 			for(int i = 0; i < strlen(restOperation); i++){
