@@ -1,0 +1,36 @@
+Thread: 3084122944 | request GET / | IP address: 127.0.0.1 | time: Fri Jul 16 19:09:05 2021
+Thread: 3084122944| reply: HTTP/1.1 200 OK
+Thread: 3074423616 | request GET /images/image1.jpg | IP address: 127.0.0.1 | time: Fri Jul 16 19:09:05 2021
+Thread: 3074423616| reply: HTTP/1.1 200 OK
+Thread: 3066030912 | request GET /documents/document.html | IP address: 127.0.0.1 | time: Fri Jul 16 19:09:26 2021
+Thread: 3066030912| reply: HTTP/1.1 200 OK
+Thread: 3057638208 | request GET /images/image2.jpg | IP address: 127.0.0.1 | time: Fri Jul 16 19:09:26 2021
+Thread: 3057638208| reply: HTTP/1.1 200 OK
+Thread: 3049245504 | request GET /SET | IP address: 127.0.0.1 | time: Fri Jul 16 19:09:41 2021
+Thread: 3049245504| reply: HTTP/1.1 404 Not Found
+Thread: 3040852800 | request GET /GET | IP address: 127.0.0.1 | time: Fri Jul 16 19:10:14 2021
+Thread: 3040852800| reply: HTTP/1.1 404 Not Found
+Thread: 3032460096 | request GET / | IP address: 127.0.0.1 | time: Fri Jul 16 19:10:27 2021
+Thread: 3032460096| reply: HTTP/1.1 200 OK
+Thread: 3024067392 | request GET /images/image1.jpg | IP address: 127.0.0.1 | time: Fri Jul 16 19:10:28 2021
+Thread: 3024067392| reply: HTTP/1.1 200 OK
+Thread: 3015674688 | request GET /images/image1.jpg | IP address: 127.0.0.1 | time: Fri Jul 16 19:10:55 2021
+Thread: 3015674688| reply: HTTP/1.1 200 OK
+Thread: 3007281984 | request SET
+images/image1.jpg HTTP/1.1
+Host: | IP address: 127.0.0.1 | time: Fri Jul 16 19:11:51 2021
+Thread: 3007281984| reply: HTTP/1.1 501 Not Implemented
+Thread: 2998889280 | request GET images/image1.jpg
+HTTP/1.1
+Host: | IP address: 127.0.0.1 | time: Fri Jul 16 19:12:17 2021
+Thread: 2998889280| reply: HTTP/1.1 404 Not Found
+Thread: 2990496576 | request documents/image/image1.jpg
+1.1
+Host: localhost:8080
+User-Agent: | IP address: 127.0.0.1 | time: Fri Jul 16 19:12:59 2021
+Thread: 2990496576| reply: HTTP/1.1 501 Not Implemented
+Thread: 2982103872 | request GET /images/image2.jpg
+pg
+1.1
+Host: | IP address: 127.0.0.1 | time: Fri Jul 16 19:13:19 2021
+Thread: 2982103872| reply: HTTP/1.1 404 Not Found
