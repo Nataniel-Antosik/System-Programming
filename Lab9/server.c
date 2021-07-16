@@ -33,7 +33,7 @@ char buffor[8192];
 
 int socketN, newConnection, reading;
 
-DIR* plik;
+DIR* file;
 FILE *fp, *file_log;
 
 time_t rawtime;
@@ -83,13 +83,11 @@ int main(int argc, char *argv[]){
 		exit(EXIT_FAILURE);
 	}
 
-	plik = opendir(dir);
-	
-	int lpliki = 0;
+	file = opendir(dir);
 
-	if(plik){
+	if(file){
 		printf("Directory exists\n"); 
-		if(closedir(plik) == -1){
+		if(closedir(file) == -1){
 			printf("Directory not closed\n");
 		}
 	} else {
